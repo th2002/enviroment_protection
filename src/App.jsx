@@ -1,7 +1,13 @@
+import Banner from "~/components/banner/Banner";
+import Header from "~/components/header/Header";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="flex min-h-screen flex-col justify-start overflow-hidden px-20 font-roboto">
+        <Header />
+        <Banner />
+      </div>
     </>
   );
 }
