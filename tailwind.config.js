@@ -25,9 +25,11 @@ export default {
       animation: {
         slideDown: 'slideDown 0.5s ease-in-out',
         fadeIn: 'fadeIn 0.5s ease-in-out'
+      },
+      screens: {
+        '3xl': '1800px'
       }
     }
   },
   plugins: []
 };
-
