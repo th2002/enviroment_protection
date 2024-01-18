@@ -37,13 +37,13 @@ function Banner() {
       </div>
 
       <div
-        className="absolute right-[500px] top-0 h-full bg-[url(assets/images/bg-clip-path-1.png)] bg-cover"
+        className="absolute right-[500px] top-0 h-full bg-[url(../../../public/assets/images/bg-clip-path-1.png)] bg-cover"
         style={{
           clipPath: clipPathValue,
           width: "500px",
         }}
       ></div>
-      <div className="absolute -right-8 -top-2 flex h-full items-center">
+      <div className="absolute -right-8 -top-2 flex h-full items-center overflow-hidden">
         <img src={Earth} />
       </div>
 
