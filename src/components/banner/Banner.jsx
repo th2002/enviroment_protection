@@ -37,7 +37,7 @@ function Banner() {
       </div>
 
       <div
-        className="absolute right-[500px] top-0 h-full bg-[url(../../../public/assets/images/bg-clip-path-1.png)] bg-cover"
+        className="absolute right-[500px] top-0 h-full bg-[url(/assets/images/bg-clip-path-1.png)] bg-cover"
         style={{
           clipPath: clipPathValue,
           width: "500px",
