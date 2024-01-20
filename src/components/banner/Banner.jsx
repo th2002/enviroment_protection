@@ -1,4 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 import Reveal from "~/Reveal";
 import Earth from "./Earth.svg";
 
@@ -10,13 +11,13 @@ function Banner() {
     <div className="relative mt-[60px] flex h-[500px] w-full justify-between bg-[#64CCC5] bg-cover bg-no-repeat object-cover px-8 py-10">
       <div className="flex items-start">
         <Reveal>
-          <h1 className="3xl:text-4xl 3xl:leading-[80px] text-2xl font-semibold leading-[80px] text-[#DAFFFB]">
+          <h1 className="3xl:text-3xl 3xl:leading-[80px] text-2xl font-semibold leading-[80px] text-[#DAFFFB]">
             Tổ chức cuộc thi thiết kế website <br />
             <span>
               <Typewriter
                 words={[
                   "“ Environment Protection ”",
-                  "Dành cho sinh viên FPT Polytechnic",
+                  "Dành cho sinh viên FPT Poly",
                 ]}
                 loop={0}
                 cursor
@@ -28,32 +29,73 @@ function Banner() {
         </Reveal>
       </div>
 
-      <div>
-        <img
-          className="3xl:w-[300px] absolute left-[150px] top-64 w-[200px] object-cover 2xl:left-[250px] 2xl:top-52 2xl:w-[250px]"
-          src="assets/images/vector_decor.png"
-          alt="Vector"
-        />
-      </div>
-
-      <div
-        className="3xl:right-[500px] absolute right-[380px] top-0 h-full bg-[url(/assets/images/bg-clip-path-1.png)] bg-cover 2xl:right-[400px]"
-        style={{
-          clipPath: clipPathValue,
-          width: "500px",
+      <motion.div
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
         }}
-      ></div>
-      <div className="absolute -right-8 -top-2 flex h-full items-center overflow-hidden">
-        <img src={Earth} />
-      </div>
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 1.5 }}
+      >
+        <div>
+          <img
+            className="3xl:w-[300px] absolute left-[150px] top-64 w-[200px] object-cover 2xl:left-[200px] 2xl:top-52 2xl:w-[250px]"
+            src="assets/images/vector_decor.png"
+            alt="Vector"
+          />
+        </div>
+      </motion.div>
 
-      <div>
-        <img
-          className="absolute -right-28 top-80 w-[300px] -rotate-[25deg] scale-x-[-1] object-cover 2xl:w-[500px]"
-          src="assets/images/hand.png"
-          alt="Hand Vector"
-        />
-      </div>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: 75, x: 500 },
+          visible: { opacity: 1, y: -45, x: 500 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 2.5 }}
+      >
+        <div
+          className="3xl:right-[500px] xxl:flex absolute right-[380px] top-0 hidden h-[505px] bg-[url(/assets/images/bg-clip-path-1.png)] bg-cover 2xl:right-[400px]"
+          style={{
+            clipPath: clipPathValue,
+            width: "500px",
+          }}
+        ></div>
+      </motion.div>
+
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: -175 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 3.5 }}
+      >
+        <div className="absolute -right-8 -top-2 flex h-full w-fit items-center overflow-hidden">
+          <img src={Earth} />
+        </div>
+      </motion.div>
+
+      <motion.div
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
+        }}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 3 }}
+      >
+        <div>
+          <img
+            className="absolute -right-28 top-80 w-[300px] -rotate-[25deg] scale-x-[-1] object-cover 2xl:w-[500px]"
+            src="assets/images/hand.png"
+            alt="Hand Vector"
+          />
+        </div>
+      </motion.div>
     </div>
   );
 }

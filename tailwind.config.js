@@ -27,6 +27,7 @@ export default {
         fadeIn: 'fadeIn 0.5s ease-in-out'
       },
       screens: {
+        xxl: '1400px',
         '3xl': '1800px'
       }
     }
