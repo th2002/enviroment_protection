@@ -97,7 +97,7 @@ function Banner() {
       >
         <div>
           <img
-            className="absolute -right-28 top-80 w-[300px] -rotate-[25deg] scale-x-[-1] object-cover 2xl:w-[500px]"
+            className="absolute -right-28 top-80 w-[300px] -rotate-[25deg] scale-x-[-1] object-cover"
             src="assets/images/hand.png"
             alt="Hand Vector"
           />
