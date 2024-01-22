@@ -1,6 +1,6 @@
 function Sidebar() {
   return (
-    <div className="flex h-[680px] flex-col gap-6 overflow-auto scroll-smooth border-r-[1px] border-gray-300 pr-20 2xl:h-[754px] 3xl:h-auto">
+    <div className="flex h-[680px] flex-col gap-6 overflow-auto scroll-smooth border-r-[1px] border-gray-300 pr-20 2xl:h-[754px] 3xl:h-[850px]">
       <h2 className="font-semibold tracking-widest">Cuộc thi</h2>
       <ul className="*:border-l-2 *:border-gray-400 *:py-3 *:pl-5 *:text-sm *:font-medium *:text-gray-500 *:transition-all *:duration-300 *:ease-linear">
         <li className="hover:border-primary hover:text-primary">

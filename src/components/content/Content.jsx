@@ -6,7 +6,7 @@ import Reveal from "~/Reveal";
 
 function Content() {
   return (
-    <div className="scrollbar-hide h-[680px] w-[800px] overflow-y-auto scroll-smooth px-10 2xl:h-[754px] 3xl:h-[864px]">
+    <div className="scrollbar-hide 3xl:h[800px] h-[680px] w-[800px] overflow-y-auto scroll-smooth px-10 2xl:h-[774px] 2xl:w-[1020px] 3xl:h-[850px] 3xl:w-[1500px]">
       <div className="text-justify">
         <div className="flex gap-5 border-[4px] border-l-primary bg-primary bg-opacity-15 px-8 py-6 font-medium">
           <FontAwesomeIcon
@@ -263,9 +263,9 @@ function Content() {
           Bài viết
         </h1>
         <div className="flex flex-wrap justify-between gap-8">
-          <div className="w-[330px]">
+          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover"
+              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2024/01/18/a-can-tho.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -277,9 +277,9 @@ function Content() {
               đán 2024
             </a>
           </div>
-          <div className="w-[330px]">
+          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover"
+              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2024/01/19/img_9772.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -291,9 +291,9 @@ function Content() {
               toàn quốc
             </a>
           </div>
-          <div className="w-[330px]">
+          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover"
+              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2023/09/07/dsc_1251.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -304,9 +304,9 @@ function Content() {
               1.000 tấn rác vì một Việt Nam xanh
             </a>
           </div>
-          <div className="w-[330px]">
+          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover"
+              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2023/09/24/img_4165.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -318,7 +318,7 @@ function Content() {
               tương lai xanh”
             </a>
           </div>
-          <div className="w-full text-end">
+          <div className="w-full text-start">
             <a
               href="https://baotainguyenmoitruong.vn/moi-truong"
               className="text-sm"
@@ -335,9 +335,9 @@ function Content() {
           Thông tin
         </h1>
         <div className="flex flex-wrap justify-between gap-8">
-          <div className="w-[330px]">
+          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover"
+              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
               src="https://jes.edu.vn/wp-content/uploads/2020/09/Moi-truong-la-gi-1-768x432.png"
               alt="Hình ảnh minh họa"
             />
@@ -348,9 +348,9 @@ function Content() {
               Môi trường là gì? Hiểu đúng về khái niệm môi trường
             </a>
           </div>
-          <div className="w-[330px]">
+          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover"
+              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Horsk%C3%A1_Kvilda_St%C5%99edisko_envir._v%C3%BDchovy_03.jpg/1280px-Horsk%C3%A1_Kvilda_St%C5%99edisko_envir._v%C3%BDchovy_03.jpg"
               alt="Hình ảnh minh họa"
             />
