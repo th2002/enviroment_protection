@@ -3,6 +3,7 @@ import Header from "~/components/header/Header";
 import Sidebar from "~/components/sidebar/Sidebar";
 import Content from "./components/content/Content";
 import { Helmet } from "react-helmet";
+import SidebarRight from "./components/sidebar_right/SidebarRight";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <div className="mb-8 mt-8 flex">
           <Sidebar />
           <Content />
+          <SidebarRight />
         </div>
       </div>
     </>
