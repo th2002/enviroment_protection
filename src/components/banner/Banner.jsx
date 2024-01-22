@@ -1,6 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import Reveal from "~/Reveal";
 import Earth from "./Earth.svg";
 
 function Banner() {
@@ -10,8 +9,16 @@ function Banner() {
   return (
     <div className="relative mt-[60px] flex h-[500px] w-full justify-between bg-[#64CCC5] bg-cover bg-no-repeat object-cover px-8 py-10">
       <div className="flex items-start">
-        <Reveal>
-          <h1 className="3xl:text-3xl 3xl:leading-[80px] text-2xl font-semibold leading-[80px] text-[#DAFFFB]">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.25 }}
+        >
+          <h1 className="text-2xl font-semibold leading-[80px] text-[#DAFFFB] 3xl:text-3xl 3xl:leading-[80px]">
             Tổ chức cuộc thi thiết kế website <br />
             <span>
               <Typewriter
@@ -26,7 +33,7 @@ function Banner() {
               />
             </span>
           </h1>
-        </Reveal>
+        </motion.div>
       </div>
 
       <motion.div
@@ -40,7 +47,7 @@ function Banner() {
       >
         <div>
           <img
-            className="3xl:w-[300px] absolute left-[150px] top-64 w-[200px] object-cover 2xl:left-[200px] 2xl:top-52 2xl:w-[250px]"
+            className="absolute left-[150px] top-64 w-[200px] object-cover 2xl:left-[200px] 2xl:top-52 2xl:w-[250px] 3xl:w-[300px]"
             src="assets/images/vector_decor.png"
             alt="Vector"
           />
@@ -57,7 +64,7 @@ function Banner() {
         transition={{ duration: 0.5, delay: 2.5 }}
       >
         <div
-          className="3xl:right-[500px] xxl:flex absolute right-[380px] top-0 hidden h-[505px] bg-[url(/assets/images/bg-clip-path-1.png)] bg-cover 2xl:right-[400px]"
+          className="absolute right-[380px] top-0 hidden h-[505px] bg-[url(/assets/images/bg-clip-path-1.png)] bg-cover xxl:flex 2xl:right-[400px] 3xl:right-[500px]"
           style={{
             clipPath: clipPathValue,
             width: "500px",

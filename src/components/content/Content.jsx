@@ -2,10 +2,11 @@ import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import { faEnvelope, faFire } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Reveal from "~/Reveal";
 
 function Content() {
   return (
-    <div className="w-[780px] px-10">
+    <div className="scrollbar-hide h-[680px] w-[800px] overflow-y-auto scroll-smooth px-10 2xl:h-[754px] 3xl:h-[864px]">
       <div className="text-justify">
         <div className="flex gap-5 border-[4px] border-l-primary bg-primary bg-opacity-15 px-8 py-6 font-medium">
           <FontAwesomeIcon
@@ -36,73 +37,103 @@ function Content() {
       </div>
 
       <div className="mt-10">
-        <h1 className="mb-4 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Vì sao có cuộc thi này ?
-        </h1>
-        <p className="text-sm leading-10 tracking-wide">
-          Chào các ong vàng chăm chỉ của{" "}
-          <span className="text-base font-semibold text-orange-400">
-            FPT Polytechnic
-          </span>{" "}
-          ! 🐝 💛 <br /> 🌱{" "}
-          <span className="text-base font-semibold text-green-500">
-            MÔI TRƯỜNG LÀ NGÔI NHÀ CHUNG CỦA CHÚNG TA
-          </span>{" "}
-          🌿 <br /> Chúng ta đều đồng lòng rằng bảo vệ thiên nhiên và môi trường
-          không chỉ là trách nhiệm, mà còn là sự cam kết sống bền vững để giữ
-          cho hành tinh của chúng ta tồn tại và phát triển. <br /> 🌏💙 Để đề
-          xuất một cách sáng tạo nhằm kêu gọi sự quan tâm và hành động từ cộng
-          đồng, nhóm chúng mình tổ chức{" "}
-          <span className="text-base font-semibold text-[#176B87]">
-            CUỘC THI CODE LANDING PAGE VỀ CHỦ ĐỀ BẢO VỆ MÔI TRƯỜNG!
-          </span>{" "}
-          🚀🌳
-        </p>
+        <Reveal>
+          <h1
+            id="why"
+            className="mb-4 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Vì sao có cuộc thi này ?
+          </h1>
+        </Reveal>
+
+        <Reveal>
+          <p className="text-sm leading-10 tracking-wide">
+            Chào các ong vàng chăm chỉ của{" "}
+            <span className="text-base font-semibold text-orange-400">
+              FPT Polytechnic
+            </span>{" "}
+            ! 🐝 💛 <br /> 🌱{" "}
+            <span className="text-base font-semibold text-green-500">
+              MÔI TRƯỜNG LÀ NGÔI NHÀ CHUNG CỦA CHÚNG TA
+            </span>{" "}
+            🌿 <br /> Chúng ta đều đồng lòng rằng bảo vệ thiên nhiên và môi
+            trường không chỉ là trách nhiệm, mà còn là sự cam kết sống bền vững
+            để giữ cho hành tinh của chúng ta tồn tại và phát triển. <br /> 🌏💙
+            Để đề xuất một cách sáng tạo nhằm kêu gọi sự quan tâm và hành động
+            từ cộng đồng, nhóm chúng mình tổ chức{" "}
+            <span className="text-base font-semibold text-[#176B87]">
+              CUỘC THI CODE LANDING PAGE VỀ CHỦ ĐỀ BẢO VỆ MÔI TRƯỜNG!
+            </span>{" "}
+            🚀🌳
+          </p>
+        </Reveal>
+
         <img
           className="mx-auto mb-10 mt-8 w-[400px] object-cover"
           src="assets/images/poster.png"
           alt="Poster"
         />
 
-        <h1 className="mb-4 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Hình thức tham gia
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          <span className="mr-4">1️⃣</span> Hiểu rõ về các vấn đề môi trường hiện
-          nay.
-          <br /> <span className="mr-4">2️⃣</span> Sáng tạo và thiết kế một trang
-          landing page thú vị và ấn tượng.
-          <br /> <span className="mr-4">3️⃣</span> Chia sẻ thông điệp của bạn về
-          bảo vệ môi trường thông qua nội dung của trang web.
-          <br /> <span className="mr-4">4️⃣</span> Like fanpage và share bài viết
-          tổ chức cuộc thi trên fanpage
-          <br /> <span className="mr-4">5️⃣</span> Điền thông tin và nộp link
-          demo sản phẩm theo form này
-        </p>
+        <Reveal>
+          <h1
+            id="participate"
+            className="mb-4 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Hình thức tham gia
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            <span className="mr-4">1️⃣</span> Hiểu rõ về các vấn đề môi trường
+            hiện nay.
+            <br /> <span className="mr-4">2️⃣</span> Sáng tạo và thiết kế một
+            trang landing page thú vị và ấn tượng.
+            <br /> <span className="mr-4">3️⃣</span> Chia sẻ thông điệp của bạn
+            về bảo vệ môi trường thông qua nội dung của trang web.
+            <br /> <span className="mr-4">4️⃣</span> Like fanpage và share bài
+            viết tổ chức cuộc thi trên fanpage
+            <br /> <span className="mr-4">5️⃣</span> Điền thông tin và nộp link
+            demo sản phẩm theo form này
+          </p>
+        </Reveal>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Quy tắc
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          <span className="mr-4">1️⃣</span> Có thể sử dụng HTML, CSS, SCSS, JS
-          <br /> <span className="mr-4">2️⃣</span>
-          <span className="font-semibold text-red-500">Không</span> sử dụng các
-          CMS platform như: Wordpress, Shopify... <br />
-          <span className="mr-4">3️⃣</span>
-          <span className="font-semibold text-red-500">Không</span> sử dụng các
-          library CSS và JS <br /> <span className="mr-4">4️⃣</span>Quản lí
-          source code bằng github <br /> <span className="mr-4">5️⃣</span>
-          <span className="font-semibold text-red-500">Không</span> nhờ người
-          code hộ ! BTC sẽ tiến hành kiểm tra lại trước khi trao giải
-        </p>
+        <Reveal>
+          <h1
+            id="rule"
+            className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Quy tắc
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            <span className="mr-4">1️⃣</span> Có thể sử dụng HTML, CSS, SCSS, JS
+            <br /> <span className="mr-4">2️⃣</span>
+            <span className="font-semibold text-red-500">Không</span> sử dụng
+            các CMS platform như: Wordpress, Shopify... <br />
+            <span className="mr-4">3️⃣</span>
+            <span className="font-semibold text-red-500">Không</span> sử dụng
+            các library CSS và JS <br /> <span className="mr-4">4️⃣</span>Quản lí
+            source code bằng github <br /> <span className="mr-4">5️⃣</span>
+            <span className="font-semibold text-red-500">Không</span> nhờ người
+            code hộ ! BTC sẽ tiến hành kiểm tra lại trước khi trao giải
+          </p>
+        </Reveal>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Lịch trình <FontAwesomeIcon icon={faCalendar} />
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          từ ngày <span className="font-semibold">22/01/2024</span> đến hết ngày{" "}
-          <span className="font-semibold">28/01/2024</span>
-        </p>
+        <Reveal>
+          <h1
+            id="schedule"
+            className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Lịch trình <FontAwesomeIcon icon={faCalendar} />
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            từ ngày <span className="font-semibold">22/01/2024</span> đến hết
+            ngày <span className="font-semibold">28/01/2024</span>
+          </p>
+        </Reveal>
 
         <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
           <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
@@ -116,24 +147,38 @@ function Content() {
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20"></div>
         </div>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Danh sách giám khảo
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          <FontAwesomeIcon className="mr-2 text-red-600" icon={faFire} beat />{" "}
-          cô <span className="font-semibold">Nguyễn Thị Nam</span> - BM CNTT
-        </p>
+        <Reveal>
+          <h1
+            id="examiner"
+            className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Danh sách giám khảo
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            <FontAwesomeIcon className="mr-2 text-red-600" icon={faFire} beat />{" "}
+            cô <span className="font-semibold">Nguyễn Thị Nam</span> - BM CNTT
+          </p>
+        </Reveal>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Tiêu chí đánh giá
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          <span className="mr-4">1️⃣</span>Giao diện
-          <br /> <span className="mr-4">2️⃣</span>
-          Sáng tạo <br />
-          <span className="mr-4">3️⃣</span>
-          Thông điệp ý nghĩa
-        </p>
+        <Reveal>
+          <h1
+            id="criteria"
+            className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Tiêu chí đánh giá
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            <span className="mr-4">1️⃣</span>Giao diện
+            <br /> <span className="mr-4">2️⃣</span>
+            Sáng tạo <br />
+            <span className="mr-4">3️⃣</span>
+            Thông điệp ý nghĩa
+          </p>
+        </Reveal>
 
         <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
           <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
@@ -147,43 +192,57 @@ function Content() {
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20"></div>
         </div>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
-          🏆 NHỮNG PHẦN THƯỞNG HẤP DẪN ĐANG CHỜ ĐÓN
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          🥇 Giải Nhất:{" "}
-          <span className="text-lg font-semibold text-yellow-500">
-            500.000 VND
-          </span>{" "}
-          <br />
-          🥈 Giải Nhì:{" "}
-          <span className="text-lg font-semibold text-gray-500">
-            300.000 VND
-          </span>{" "}
-          <br />
-          🥉 Giải Ba:{" "}
-          <span className="text-lg font-semibold text-orange-500">
-            200.000 VND
-          </span>{" "}
-          <br />
-          🎖 Giả khuyến khích:{" "}
-          <span className="text-lg font-semibold text-gray-700">
-            100.000 VND
-          </span>{" "}
-        </p>
+        <Reveal>
+          <h1
+            id="prize"
+            className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            🏆 NHỮNG PHẦN THƯỞNG HẤP DẪN ĐANG CHỜ ĐÓN
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            🥇 Giải Nhất:{" "}
+            <span className="text-lg font-semibold text-yellow-500">
+              500.000 VND
+            </span>{" "}
+            <br />
+            🥈 Giải Nhì:{" "}
+            <span className="text-lg font-semibold text-gray-500">
+              300.000 VND
+            </span>{" "}
+            <br />
+            🥉 Giải Ba:{" "}
+            <span className="text-lg font-semibold text-orange-500">
+              200.000 VND
+            </span>{" "}
+            <br />
+            🎖 Giả khuyến khích:{" "}
+            <span className="text-lg font-semibold text-gray-700">
+              100.000 VND
+            </span>{" "}
+          </p>
+        </Reveal>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
-          Quy trình trao giải
-        </h1>
-        <p className="text-sm leading-8 tracking-wide">
-          Mọi người nhắn tin fanpage để cung cấp một trong các thông tin chứng
-          minh dưới đây, sau khi xác nhận xong ban tổ chức sẽ liên hệ để trao
-          giải <br />
-          <span className="mr-4">1️⃣</span>Thẻ sinh viên
-          <br /> <span className="mr-4">2️⃣</span>
-          Hình ảnh liên quan khác nếu mất thẻ <br />
-          <span className="mr-4">3️⃣</span>Số điện thoại
-        </p>
+        <Reveal>
+          <h1
+            id="procedure"
+            className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Quy trình trao giải
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-sm leading-8 tracking-wide">
+            Mọi người nhắn tin fanpage để cung cấp một trong các thông tin chứng
+            minh dưới đây, sau khi xác nhận xong ban tổ chức sẽ liên hệ để trao
+            giải <br />
+            <span className="mr-4">1️⃣</span>Thẻ sinh viên
+            <br /> <span className="mr-4">2️⃣</span>
+            Hình ảnh liên quan khác nếu mất thẻ <br />
+            <span className="mr-4">3️⃣</span>Số điện thoại
+          </p>
+        </Reveal>
 
         <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
           <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
@@ -197,7 +256,10 @@ function Content() {
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-black bg-opacity-20"></div>
         </div>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
+        <h1
+          id="posts"
+          className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+        >
           Bài viết
         </h1>
         <div className="flex flex-wrap justify-between gap-8">
@@ -266,7 +328,10 @@ function Content() {
           </div>
         </div>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
+        <h1
+          id="info"
+          className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+        >
           Thông tin
         </h1>
         <div className="flex flex-wrap justify-between gap-8">
@@ -298,7 +363,10 @@ function Content() {
           </div>
         </div>
 
-        <h1 className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]">
+        <h1
+          id="contact"
+          className="mb-4 mt-10 text-2xl font-semibold tracking-widest text-[#176B87]"
+        >
           Liên hệ
         </h1>
         <address className="text-sm">
@@ -306,6 +374,7 @@ function Content() {
           dinhletrunghieu0207@gmail.com
         </address>
         <div
+          id="fanpage"
           className="fb-page mt-4 cursor-pointer"
           data-href="https://www.facebook.com/profile.php?id=61555635183825"
           data-tabs="timeline"

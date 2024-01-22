@@ -7,3 +7,13 @@
 .menu-items-hover {
   @apply relative py-1 transition-all duration-200 ease-linear after:absolute after:bottom-0 after:left-1/2 after:h-[3px] after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all after:duration-200 after:ease-linear  hover:after:w-full hover:after:translate-x-[-50%];
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
