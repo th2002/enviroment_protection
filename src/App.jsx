@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-undef */
 import Banner from "~/components/banner/Banner";
 import Header from "~/components/header/Header";
 import Sidebar from "~/components/sidebar/Sidebar";
@@ -7,6 +9,18 @@ import SidebarRight from "./components/sidebar_right/SidebarRight";
 function App() {
   return (
     <>
+      <Helmet>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7N8DQ7659Q"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-7N8DQ7659Q');
+        </script>
+      </Helmet>
       <Helmet>
         <script
           async
