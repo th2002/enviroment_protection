@@ -24,12 +24,12 @@ function Content() {
         </div>
       </div>
 
-      <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
+      <div className="relative mt-10 flex h-[200px] w-full items-center justify-center rounded-xl px-10">
         <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
           Cuộc thi
         </h1>
         <img
-          className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-[700px] object-cover"
+          className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-full object-cover"
           src="assets/images/banner_contest.jpg"
           alt="background"
         />
@@ -135,12 +135,12 @@ function Content() {
           </p>
         </Reveal>
 
-        <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
+        <div className="relative mt-10 flex h-[200px] w-full items-center justify-center rounded-xl px-10">
           <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
             Giám khảo
           </h1>
           <img
-            className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-[700px] object-cover"
+            className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-full object-cover"
             src="assets/images/banner_examiner.jpg"
             alt="background"
           />
@@ -180,12 +180,12 @@ function Content() {
           </p>
         </Reveal>
 
-        <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
+        <div className="relative mt-10 flex h-[200px] w-full items-center justify-center rounded-xl px-10">
           <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
             Giải thưởng
           </h1>
           <img
-            className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-[700px] object-cover"
+            className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-full object-cover"
             src="assets/images/banner_prize.jpg"
             alt="background"
           />
@@ -244,12 +244,12 @@ function Content() {
           </p>
         </Reveal>
 
-        <div className="relative mt-10 flex h-[200px] w-[700px] items-center justify-center rounded-xl px-10">
+        <div className="relative mt-10 flex h-[200px] w-full items-center justify-center rounded-xl px-10">
           <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
             Bảo vệ môi trường
           </h1>
           <img
-            className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-[700px] object-cover"
+            className="absolute bottom-0 left-0 right-0 top-0 h-[200px] w-full object-cover"
             src="assets/images/banner_env.jpg"
             alt="background"
           />
