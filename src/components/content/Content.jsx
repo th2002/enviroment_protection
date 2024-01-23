@@ -283,9 +283,9 @@ function Content() {
           Bài viết
         </h1>
         <div className="flex flex-wrap justify-between gap-8">
-          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
+          <div className="w-[240px] xl:w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
+              className="mb-4 size-[240px] object-cover xl:size-[330px] 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2024/01/18/a-can-tho.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -297,9 +297,9 @@ function Content() {
               đán 2024
             </a>
           </div>
-          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
+          <div className="w-[240px] xl:w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
+              className="mb-4 size-[240px] object-cover xl:size-[330px] 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2024/01/19/img_9772.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -311,9 +311,9 @@ function Content() {
               toàn quốc
             </a>
           </div>
-          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
+          <div className="w-[240px] xl:w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
+              className="mb-4 size-[240px] object-cover xl:size-[330px] 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2023/09/07/dsc_1251.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -324,9 +324,9 @@ function Content() {
               1.000 tấn rác vì một Việt Nam xanh
             </a>
           </div>
-          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
+          <div className="w-[240px] xl:w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
+              className="mb-4 size-[240px] object-cover xl:size-[330px] 2xl:w-[450px] 3xl:w-[550px]"
               src="https://btnmt.1cdn.vn/2023/09/24/img_4165.jpg"
               alt="Hình ảnh minh họa"
             />
@@ -355,9 +355,9 @@ function Content() {
           Thông tin
         </h1>
         <div className="flex flex-wrap justify-between gap-8">
-          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
+          <div className="w-[240px] xl:w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
+              className="mb-4 size-[240px] object-cover xl:size-[330px] 2xl:w-[450px] 3xl:w-[550px]"
               src="https://jes.edu.vn/wp-content/uploads/2020/09/Moi-truong-la-gi-1-768x432.png"
               alt="Hình ảnh minh họa"
             />
@@ -368,9 +368,9 @@ function Content() {
               Môi trường là gì? Hiểu đúng về khái niệm môi trường
             </a>
           </div>
-          <div className="w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
+          <div className="w-[240px] xl:w-[330px] 2xl:w-[450px] 3xl:w-[550px]">
             <img
-              className="mb-4 size-[330px] object-cover 2xl:w-[450px] 3xl:w-[550px]"
+              className="mb-4 size-[240px] object-cover xl:size-[330px] 2xl:w-[450px] 3xl:w-[550px]"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Horsk%C3%A1_Kvilda_St%C5%99edisko_envir._v%C3%BDchovy_03.jpg/1280px-Horsk%C3%A1_Kvilda_St%C5%99edisko_envir._v%C3%BDchovy_03.jpg"
               alt="Hình ảnh minh họa"
             />
