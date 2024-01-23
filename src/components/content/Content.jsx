@@ -24,6 +24,26 @@ function Content() {
         </div>
       </div>
 
+      <div className="my-10">
+        <Reveal>
+          <h1
+            id="why"
+            className="mb-4 text-2xl font-semibold tracking-widest text-[#176B87]"
+          >
+            Form nộp bài dự thi
+          </h1>
+        </Reveal>
+
+        <Reveal>
+          <a
+            href="https://forms.gle/mUYp4HANh9BFuKwm6"
+            className="text-sm font-semibold leading-8 tracking-wide text-primary"
+          >
+            https://forms.gle/mUYp4HANh9BFuKwm6
+          </a>
+        </Reveal>
+      </div>
+
       <div className="relative mt-10 flex h-[200px] w-full items-center justify-center rounded-xl px-10">
         <h1 className="absolute z-20 text-5xl font-bold uppercase tracking-widest text-white">
           Cuộc thi
